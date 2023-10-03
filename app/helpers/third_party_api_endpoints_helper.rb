@@ -1,0 +1,2 @@
+module ThirdPartyApiEndpointsHelper
+end

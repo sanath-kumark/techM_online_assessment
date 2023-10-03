@@ -1,0 +1,22 @@
+<%= form_with(model: third_party_api_endpoint) do |form| %>
+  <% if third_party_api_endpoint.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(third_party_api_endpoint.errors.count, "error") %> prohibited this third_party_api_endpoint from being saved:</h2>
+
+      <ul>
+        <% third_party_api_endpoint.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :endpoint, style: "display: block" %>
+    <%= form.text_field :endpoint %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

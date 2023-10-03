@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Third party api endpoints</h1>
+
+<div id="third_party_api_endpoints">
+  <% @third_party_api_endpoints.each do |third_party_api_endpoint| %>
+    <%= render third_party_api_endpoint %>
+    <p>
+      <%= link_to "Show this third party api endpoint", third_party_api_endpoint %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New third party api endpoint", new_third_party_api_endpoint_path %>

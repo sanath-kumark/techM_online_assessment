@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @third_party_api_endpoint %>
+
+<div>
+  <%= link_to "Edit this third party api endpoint", edit_third_party_api_endpoint_path(@third_party_api_endpoint) %> |
+  <%= link_to "Back to third party api endpoints", third_party_api_endpoints_path %>
+
+  <%= button_to "Destroy this third party api endpoint", @third_party_api_endpoint, method: :delete %>
+</div>

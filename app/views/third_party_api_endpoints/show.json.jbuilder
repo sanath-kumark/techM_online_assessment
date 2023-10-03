@@ -1,0 +1,1 @@
+json.partial! "third_party_api_endpoints/third_party_api_endpoint", third_party_api_endpoint: @third_party_api_endpoint
