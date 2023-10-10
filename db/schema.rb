@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_10_02_101440) do
+ActiveRecord::Schema[7.0].define(version: 2023_10_10_131213) do
   create_table "products", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -21,6 +21,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_02_101440) do
     t.string "endpoint"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "token"
   end
 
 end

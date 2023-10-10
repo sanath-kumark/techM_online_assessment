@@ -1,3 +1,3 @@
 class ThirdPartyApiEndpoint < ApplicationRecord
-    validates :endpoint, presence: true, format: URI.regexp(%w(http https))
+    validates :endpoint, url: true, presence: true
 end
